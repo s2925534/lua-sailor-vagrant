@@ -8,6 +8,7 @@ A vagrant box for sailor - lua web framework
 
 # What is included
 - Ubuntu Wily 15.10
+- Apache2
 - Lua 5.2
 - Sailor
 - Luarocks
