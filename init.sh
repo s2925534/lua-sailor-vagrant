@@ -9,4 +9,8 @@ service apache2 restart
 luarocks install sailor
 
 #Create new sailor project
-sailor create 'Hey Arnold' /var/www/html
+sailor create 'hello-world' /vagrant/sailor
+if ! [ -L /var/www/html ]; then
+  rm -rf /var/www/html
+  ln -fs /vagrant/hello-world /var/www/html
+fi
