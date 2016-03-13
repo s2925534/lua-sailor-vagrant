@@ -12,5 +12,5 @@ luarocks install sailor
 sailor create 'hello-world' /vagrant/sailor
 if ! [ -L /var/www/html ]; then
   rm -rf /var/www/html
-  ln -fs /vagrant/hello-world /var/www/html
+  ln -fs /vagrant/sailor/hello-world /var/www/html
 fi
