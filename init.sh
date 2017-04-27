@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo apt-add-repository ppa:ondrej/apache2
 apt-get update
 apt-get upgrade
 
