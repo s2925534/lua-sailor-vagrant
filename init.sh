@@ -2,9 +2,12 @@
 apt-get update
 apt-get upgrade
 
+apt-get -y install git
 apt-get -y install apache2
 apt-get -y install lua5.2
 apt-get -y install luarocks
+apt-get -y install mysql-client
+apt-get -y install lua-sql-mysql
 
 #Enable Lua
 a2enmod lua
@@ -14,7 +17,6 @@ service apache2 restart
 
 # Install packages
 luarocks install sailor
-luarocks install luasql-mysql
 
 #Create new sailor project
 sailor create 'hello-world' /vagrant/sailor
